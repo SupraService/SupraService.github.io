@@ -1,0 +1,594 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+@font-face {
+  font-family: Browallia;
+  src: url(../Fonts/BROWAB.TTF);
+}
+@font-face {
+  font-family: Cordia;
+  src: url(../Fonts/CORDIA.ttf);
+}
+*,
+::after,
+::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-intro: #fff;
+  --blue-main: hsl(218, 28%, 13%);
+  --blue-footer: hsl(216, 53%, 9%);
+  --blue-testimonials: hsl(219, 30%, 18%);
+  --white: hsl(0, 0%, 100%);
+  --cyan-gradient: hsl(176, 68%, 64%);
+  --blue-gradient: hsl(198, 60%, 50%);
+  --light-red: hsl(0, 100%, 63%);
+  --gradient: linear-gradient(
+    to right,
+    var(--cyan-gradient),
+    var(--blue-gradient)
+  );
+  --body-font: "Open Sans", sans-serif;
+  --heading-font: "Raleway", sans-serif;
+  --padding-container: 60px 0;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--blue-main);
+}
+/* Letra Browllia-Titulos */
+.hero__title {
+  margin-top: 0;
+  font-family: Browallia;
+  color: #76d7c4;
+}
+.hero__title {
+  font-size: 48px;
+}
+
+.hero__cta {
+  width: 500px;
+  padding: 0;
+  border-radius: 2em;
+  background-image: var(--gradient);
+  color: rgb(1, 1, 1);
+  place-self: center;
+  font-family: Browallia;
+  text-decoration: none;
+  font-size: 48px;
+}
+.about__title {
+  margin-top: 0;
+  margin-bottom: 0.1em;
+  font-family: Browallia;
+  font-size: 48px;
+  color: #76d7c4;
+  text-align: center;
+}
+.about__title1 {
+  margin-top: 0em;
+  margin-bottom: 0;
+  font-family: Browallia;
+  font-size: 48px;
+  color: #76d7c4;
+  text-align: center;
+}
+
+.productive__texts h3 {
+  font-size: 48px;
+  margin-bottom: 0;
+}
+.productive__title {
+  font-family: Browallia;
+  margin-bottom: 0.7em;
+  text-align: center;
+  color: #76d7c4;
+  font-size: 48px;
+}
+.productive__title20 {
+  font-family: Browallia;
+  margin-bottom: 0.7em;
+  text-align: center;
+  color: #76d7c4;
+  font-size: 48px;
+  line-height: 0.7;
+}
+.Pie__Imagen {
+  font-size: 60px;
+  color: #76d7c4;
+  font-family: Browallia;
+  line-height: 1.75rem;
+}
+.productive__paragraph2 {
+  line-height: 1.5;
+  margin-bottom: 0em;
+  text-align: center;
+  font-family: Browallia;
+  font-size: 48px;
+}
+.card__name {
+  font-size: 20px;
+  font-family: Browallia;
+}
+
+.card__job {
+  color: #aaa9a9;
+  font-family: Browallia;
+}
+.footer__contact {
+  font-size: 20px;
+  font-family: Browallia;
+  text-align: justify;
+  line-height: 0.8;
+}
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+  font-family: Browallia;
+  font-size: 20px;
+}
+
+/* Termina Letra Browallia */
+
+/* Letra cordia-Parrafos */
+
+.Pie__Imagen span {
+  font-family: Cordia;
+  font-size: 30px;
+}
+.hero__paragraph {
+  line-height: 0.9;
+  font-family: Cordia;
+  font-size: 30px;
+}
+.about__paragraph {
+  line-height: 0.8;
+  font-family: Cordia;
+  font-size: 30px;
+}
+.productive__paragraph {
+  line-height: 0.9;
+  text-align: center;
+  font-family: Cordia;
+  font-size: 30px;
+}
+.card__profile1 .card__img1:hover {
+  border: #e60073 solid 0.1em;
+}
+
+.productive__paragraph span {
+  text-decoration: none;
+  color: #76d7c4;
+}
+
+.card__paragraph {
+  font-family: Cordia;
+  line-height: 0.9;
+  text-align: justify;
+}
+
+/* Final Letra Cordia */
+
+.hero {
+  background-color: var(--blue-intro);
+  position: relative;
+}
+.hero__wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background-color: var(--blue-main);
+}
+
+.hero__wave::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  width: 100%;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-image: url("../images/bg-curvy-mobile.svg");
+  background-size: 140% 100px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.hero__main {
+  color: #fff;
+  display: grid;
+  gap: 1.5em;
+  text-align: center;
+  position: relative;
+}
+
+.hero__img {
+  width: 300%;
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  margin-top: 95px;
+}
+
+.about {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+.about__img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+.about__img:active {
+  border: 0.001em solid;
+  color: #76d7c4;
+}
+
+.productive {
+  color: #fff;
+  display: grid;
+  gap: 3em;
+}
+
+.productive__img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 600px;
+}
+.productive__img:active {
+  border: 0.001em solid;
+  color: #76d7c4;
+}
+
+.productive10__img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+.productive10__img:active {
+  border: 0.001em solid;
+  color: #76d7c4;
+}
+
+.productive2__img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 200px;
+}
+.productive2__img:hover {
+  border: #76d7c4 solid;
+}
+
+.productive__cta {
+  display: inline-block;
+  color: var(--cyan-gradient);
+  line-height: 2.5;
+  text-decoration: none;
+  border-bottom: 1px solid var(--cyan-gradient);
+}
+
+.productive__arrow {
+  margin-left: 0.3em;
+  vertical-align: middle;
+}
+
+.Pie__Imagen .supra {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 50px;
+  font-size: Cordia;
+}
+/* Testimonios */
+.card {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+.card__item {
+  background-color: var(--blue-testimonials);
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.5em 1em;
+  border-radius: 4px;
+  box-shadow: 1px 1px 10px -5px rgb(255, 255, 255, 0.5);
+}
+
+.card__item--first {
+  position: relative;
+}
+
+.card__item--first::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  background-image: url("../images/bg-quotes.png");
+  width: 30px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.card__profile {
+  margin-top: 1.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.card__picture {
+  width: 40px;
+  height: 40px;
+}
+
+.card__img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Fin de testimonios */
+
+/* Empieza footer */
+.footer {
+  background-color: var(--blue-footer);
+  color: #fff;
+}
+
+.footer__items {
+  display: grid;
+  gap: 1em;
+}
+
+.footer__logo {
+  width: 150px;
+  display: block;
+  margin-top: 1.75rem;
+}
+
+.footer__contact {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  color: #fff;
+}
+.footer__contact a {
+  color: azure;
+  text-decoration: none;
+}
+.footer__contact a:hover {
+  color: #e60073;
+}
+.footer__contact a:active {
+  color: #76d7c4;
+}
+
+.footer__contact--second {
+  margin-bottom: 1em;
+}
+
+.footer__icon {
+  margin-top: 3px;
+}
+
+.footer__nav {
+  margin-top: 2.5em;
+  display: grid;
+  gap: 0.8em;
+}
+.footer__nav a:hover {
+  color: #76d7c4;
+}
+.footer__nav a:active {
+  color: #e60073;
+}
+
+.footer__social {
+  margin-top: 2rem;
+  margin: 0 auto;
+}
+
+.footer__media {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: 3px solid;
+  border-radius: 25%;
+  margin-right: 20px;
+}
+.footer__social a:hover {
+  color: #76d7c4;
+}
+
+.footer__media--last {
+  margin-right: 0;
+}
+/* Termina footer */
+/* responsive */
+@media (min-width: 740px) {
+  .hero__wave::before {
+    background-image: url("../images/bg-curvy-desktop.svg");
+  }
+
+  .about {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .about__item {
+    width: 40%;
+  }
+
+  .productive {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .productive__title {
+    font-size: 2rem;
+    margin-bottom: 0.6em;
+  }
+
+  .card {
+    flex-direction: row;
+  }
+  .footer__items {
+    grid-template-columns: 2fr 1fr max-content max-content 1fr;
+    gap: 2em;
+  }
+
+  .footer__nav {
+    margin-top: 0;
+  }
+}
+@media (max-width: 539px) {
+  .Pie__Imagen {
+    margin-top: 130px;
+  }
+}
+@media (max-width: 589px) {
+  .hero__cta {
+    width: 300px;
+    padding: 0;
+    border-radius: 2em;
+    background-image: var(--gradient);
+    color: rgb(1, 1, 1);
+    place-self: center;
+    font-family: Browallia;
+    text-decoration: none;
+    font-size: 48px;
+    text-align: center;
+  }
+  .hero__img {
+    margin-top: 220px;
+  }
+}
+
+@media (width: 540px) {
+  .Pie__Imagen {
+    margin-top: 98px;
+  }
+}
+@media (max-width: 280px) {
+  .Pie__Imagen {
+    font-size: 60px;
+    margin-top: 150px;
+  }
+}
+
+.asociados_container {
+  background-color: #76d7c4;
+  display: grid;
+  text-align: center;
+  margin: 40px;
+  max-height: 500px;
+}
+/* UDI */
+.spanUDI {
+  color: #76d7c4;
+}
+
+/* Redes Sociales */
+
+.divredes2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  border-radius: 50%;
+  transition: all 0.8s;
+  cursor: pointer;
+  display: flex;
+}
+
+.icon:hover {
+  background-color: #e60073;
+  box-shadow: 0 0 20px #e60073;
+}
+
+.icon:hover:nth-child(2) {
+  background-color: #1877f2;
+  box-shadow: 0 0 20px #1877f2;
+}
+
+.icon:hover:nth-child(3) {
+  background-color: #25d366;
+  box-shadow: 0 0 20px #25d366;
+}
+
+.icon:hover:nth-child(4) {
+  background-color: #044a76;
+  box-shadow: 0 0 20px #044a76;
+}
+
+.icon i {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.7rem;
+}
+
+svg circle {
+  stroke-dasharray: 150;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon:hover circle {
+  stroke-dasharray: 220;
+}
+
+/* udi */
+
+/* Tarjeta digital */
+
+.card__profile1 {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  justify-content: center;
+}
+
+.card__picture1 {
+  width: 80px;
+  height: 50px;
+}
+
+.card__img1 {
+  width: 100%;
+
+  object-fit: cover;
+}
